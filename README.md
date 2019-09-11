@@ -1,13 +1,13 @@
 # ComputerVision
 
 Repository contains:
-- WinForms application to processing video frames from a webcam
-- .Net Core frame aggregator to capture information from distributed microservices and draw on video frames
-- Example Python configured for Docker
-- RabbitMQ helper libary RMQ.py
+- WinForms application to receive and send video frames from a webcam to RabbitMQ
+- .Net Core frame aggregator to receive data from RabbitMQ from distributed microservices and draw on video frames
+- Example Python face detection model configured to be a Docker container
+- RabbitMQ helper libary to connect to RabbitMQ (RMQ.py)
 
 Sample usage of RMQ.py:
-```
+```python
 import RMQ
 
 rmq_server = "localhost"
