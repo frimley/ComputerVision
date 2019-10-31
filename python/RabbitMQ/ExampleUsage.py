@@ -34,7 +34,8 @@ def callback_on_message_received(ch, method, properties, body):
 	output_value = random.randint(1, 5)
 
 	# what JSON will this model return?
-	return_json = '{category: %s}' % output_value
+	# you can also use json.dumps(variable) to serialize an object
+	return_json = '{"category": %s}' % output_value
 
 	# Send the return JSON to RabbitMQ exchange exchange.model.output
 	rmq_client.publish_exchange(ch, rmq_completed_exchange, return_json)
