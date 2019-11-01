@@ -1,0 +1,10 @@
+numpy
+scipy
+matplotlib
+scikit-image
+opencv-python
+pika
+face_recognition
+argparse
+pysmile
+pybase64
